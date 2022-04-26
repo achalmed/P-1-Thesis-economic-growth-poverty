@@ -1,9 +1,9 @@
 {
     "id": "13C1B512",
-    "path": "~/Documents/Economic-Research-Seminar/P-1-Thesis-economic-growth-poverty/index.Rmd",
+    "path": "~/Documents/GitHub/P-1-Thesis-economic-growth-poverty/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "4012820166",
+    "hash": "265569446",
     "contents": "",
     "dirty": false,
     "created": 1650865886251.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "13,12",
+        "cursorPosition": "19,38",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1648400064,
+    "lastKnownWriteTime": 1650858451,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1648400064,
+    "last_content_update": 1650858451,
     "read_only": false,
     "read_only_alternatives": []
 }

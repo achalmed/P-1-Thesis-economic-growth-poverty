@@ -1,436 +1,196 @@
 ---
-title: "Tesis"
-author: "E Edison Achalma Mendoza"
+title: "Introduction to Econometrics with R"
+cover-image: "images/cover.png"
+author: "Christoph Hanck, Martin Arnold, Alexander Gerber, and Martin Schmelzer"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: yes
-    toc_float: yes
-    theme: united
-    code_download: no
-  pdf_document:
-    toc: yes
-  word_document:
-    toc: yes
-subtitle: Crecimiento económico y pobreza en el departamento Ayacucho, periodo 2000-2019
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: subsection
+        scroll_highlight: yes
+      fontsettings:
+        theme: white
+        family: serif
+        size: 2
+    split_by: section+number
+    highlight: tango
+    includes:
+      in_header: [header_include.html]
+      before_body: open_review_block.html
+  bookdown::pdf_book:
+    pandoc_args: [ "--csl", "apa-old-doi-prefix.csl"]
+    includes:
+      in_header: preamble.tex
+    citation_package: natbib
+    keep_tex: yes
+always_allow_html: yes
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+biblatexoptions:
+  - sortcites
+link-citations: yes
+github-repo: "mca91/EconometricsWithR"
+description: "Beginners with little background in statistics and econometrics often have a hard time understanding the benefits of having programming skills for learning and applying Econometrics. 'Introduction to Econometrics with R' is an interactive companion to the well-received textbook 'Introduction to Econometrics' by James H. Stock and Mark W. Watson (2015). It gives a gentle introduction to the essentials of R programming and guides students in implementing the empirical applications presented throughout the textbook using the newly aquired skills. This is supported by interactive programming exercises generated with DataCamp Light and integration of interactive visualizations of central concepts which are based on the flexible JavaScript library D3.js."
+url: 'https\://www.econometrics-with-r.org/'
+tags: [Tutorial, Linear models, Econometrics, Causal Analysis, R Programming, Textbook]
 ---
 
+# Preface {-}
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, child="_setup.Rmd"}
 ```
 
-# RESUMEN
-Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
-semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl. Vestibulum diam. Aliquam
-pellentesque, augue quis sagittis posuere, turpis lacus congue quam, in hendrerit risus eros
-eget felis. Maecenas eget erat in sapien mattis porttitor. Vestibulum porttitor. Nulla facilisi.
-Sed a turpis eu lacus commodo facilisis. Morbi fringilla, wisi in dignissim interdum, justo
-lectus sagittis dui, et vehicula libero dui cursus dui. Mauris tempor ligula sed lacus. Duis
-cursus enim ut augue. Cras ac magna. Cras nulla. Nulla egestas. Curabitur a leo. Quisque
-egestas wisi eget nunc. Nam feugiat lacus vel est. Curabitur consectetuer.
-
-# ABSTRACT
-Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
-semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl. Vestibulum diam. Aliquam
-pellentesque, augue quis sagittis posuere, turpis lacus congue quam, in hendrerit risus eros
-eget felis. Maecenas eget erat in sapien mattis porttitor. Vestibulum porttitor. Nulla facilisi.
-Sed a turpis eu lacus commodo facilisis. Morbi fringilla, wisi in dignissim interdum, justo
-lectus sagittis dui, et vehicula libero dui cursus dui. Mauris tempor ligula sed lacus. Duis
-cursus enim ut augue. Cras ac magna. Cras nulla. Nulla egestas. Curabitur a leo. Quisque
-egestas wisi eget nunc. Nam feugiat lacus vel est. Curabitur consectetuer.
-
-# PRÓLOGO
-Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae,
-arcu. Aenean faucibus pede eu ante. Praesent enim elit, rutrum at, molestie non, nonummy
-vel, nisl. Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna. Donec eu
-purus. Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et convallis elit erat
-sed nulla. Donec luctus. Curabitur et nunc. Aliquam dolor odio, commodo pretium, ultricies
-non, pharetra in, velit. Integer arcu est, nonummy in, fermentum faucibus, egestas vel, odio.
-Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo eu,
-libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie et, lobortis
-in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum ullamcorper leo. Morbi
-dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique sodales est. Maecenas imperdiet
-lacinia velit. Cras non urna. Morbi eros pede, suscipit ac, varius vel, egestas non, eros.
-Praesent malesuada, diam id pretium elementum, eros sem dictum tortor, vel consectetuer
-odio sem sed wisi.
-
-# I. PLANTEAMIENTO DEL PROBLEMA
-
-## 1.1. Enunciado del problema
-La Organización para la Cooperación y el Desarrollo Económicos (2018), afirma que
-“la desigualdad económica es el distinto reparto de los ingresos, los activos o el bienestar entre
-el conjunto de habitantes”.
-Latino américa es la región más desigual de la región en términos socio económicos;
-según Lustig (2011), “la región latinoamericana es 19% más desigual que el África
-subsahariana, 37 más desigual que el este asiático y 65% más desigual que los países
-desarrollados”. En efecto América Latina es, hoy, la región sin guerras más desigual del
-planeta: más que India, más que algunos países de África Subsahariana.
-La desigualdad socio económica impide luchar contra la pobreza, ampara a los grupos
-vulnerables de vivir en la pobreza sin acceso a un trabajo decente, servicios básicos,
-exposición a una nutrición malsana o falta de vivienda digna. Se excluye el estatus social y los
-individuos y familias continúan existiendo.
-En este sentido es evidente la importancia de entender la pobreza. Ravallion, Datt, y
-Walle (1991), afirman que la pobreza alude a niveles de vida. " Esto es: ¿cuántas personas no
-pueden satisfacer ciertas necesidades predeterminadas de consumo y acceso amplio a bienes
-públicos (servicios de salud, educación, vivienda)?"
-Según el Instituto Nacional de Estadística e Informática (2000) “La pobreza es una
-condición en la cual una o más personas tienen un nivel de bienestar inferior al mínimo
-socialmente aceptado.”
-Las estadísticas indican que desde el año 2000 se ha conseguido reducir la tasa de
-incidencia de la pobreza en el Perú. El siguiente cuadro del Banco Mundial se presenta la tasa
-de incidencia de la pobreza, en relación a la base de la línea de pobreza nacional (% de la
-población) para el periodo 2004 – 2019
-
-Donde precisa que la tasa de incidencia de la pobreza entre 2004 y 2019 se redujo en
-38.5%. señala también que el principal periodo de reducción fue entre 2004 y 2011.
-Los años 2002 a 2016 la tasa de pobreza bajo de 54,30% a 20,7% y la extrema
-pobreza de 24.2% a 3.8%, ya que, en los gobiernos de Alejandro Toledo, Alan García y
-Ollanta Humana la tasa de pobreza se redujo en 5,2%, 21,4%, 7,03% y la extrema pobreza en
-10,4%, 7,5%; 2,54%, respectivamente, llegando para el año 2018 con 20,50% de pobreza y
-2,8% de extrema pobreza, con predisposición a seguir descendiendo.
-La tasa de pobreza pasó de 54% en 1990 a 20,50% para 2018 y la extrema pobreza de
-24.2% a 2.8% en el mismo periodo de años, reduciéndose significativamente la pobreza y
-extrema pobreza en 33,5% y 21.4% respectivamente; esto como consecuencia del crecimiento
-económico sostenido, lo cual implicó un aumento del gasto social, aumento de la inversión
-pública y una mejora en la calidad y focalización de los programas sociales.
-En los periodos 2001 a 2010, la pobreza decreció en 23,5 puntos porcentuales, al pasar
-de 54,8% a 31,3% en el 2010.
-
-Mientras que en año 2017, 6 millones 906 mil de personas (21,7%), se encontraban en
-situación de pobreza, lo que significa que estas personas tenían un nivel de gasto por debajo
-del costo de la canasta básica de consumo. Comparando este resultado con los niveles del año
-2016, se puede observar que la tasa de pobreza ha aumentado en 1,0%, equivalente a 375.000
-pobres, más que en 2016.
-
-En 2019, el índice de pobreza monetaria afectó al 20,2% de la población del país,
-manteniendo casi el mismo nivel que en 2018; Así lo publicó el INEI, de acuerdo con los
-resultados de la Encuesta Nacional de Hogares (ENAHO) 2019. También señaló que la población en pobreza es considerada la población promedio. el gasto está por debajo del valor de la línea de pobreza (PL), el equivalente monetario de una canasta de productos básicos y alimenticios.
-
-Cuando se habla de pobreza también se hace referencia a la desigualdad social; un
-grupo social que es excluido ya que no cuenta con el mismo acceso a los recursos que otros
-grupos con poder si tienen, estas diferencias están marcadas con claridad entre las zonas
-urbanas y rurales.
-La aplicación errada de políticas públicas ha pronunciado aún más las diferencias, ya
-que no se ha permitido una integración de la multiculturalidad con la que cuenta el Perú, y
-muy por el contrario ha ocasionado un marcado distanciamiento entre ellos.
-En un contexto de crecimiento económico sostenido, es necesario mejorar la
-formulación y aplicación de las políticas del país, en objetivos puntuales de desarrollo y
-asistencia social con el firme objetivo de combatir la pobreza a largo plazo mejorar los
-estándares de vida de su población en conjunto.
-
-## 1.2. Formulación del problema
-
-### 1.2.1. Problema general
-¿Cómo la desigualdad socioeconómica determina el grado de pobreza en el
-departamento de Ayacucho, periodo 2000-2019?
-
-### 1.2.2. Problemas específicos
-¿Cuál es la influencia del empleo en el IDH en el departamento de Ayacucho, periodo
-2000-2019?
-¿Cuál es la incidencia del índice de Theilen en la determinación de grado de pobreza en
-el departamento de Ayacucho, periodo 2000-2019?
-¿Como el desempleo influye en el índice de Gini en el departamento de Ayacucho,
-periodo 2000-2019?
-
-# II. OBJETIVOS
-
-## 2.1. Objetivo general
-Establecer cómo de la desigualdad socioeconómica incide en la pobreza en el
-departamento de Ayacucho, periodo 2000-2019.
-
-## 2.2. Objetivos específicos
-Analizar cómo el empleo influye en el Índice de Desarrollo Humano en las zonas rurales
-de Ayacucho.
-Determinar cuánto el Índice de Theilen influye en el Grado de pobreza.
-Identificar de qué manera el desempleo determina el índice de Gini en el departamento
-de Ayacucho.
-
-# III.JUSTIFICACIÓN
-
-## 3.1. Justificación teórica
-La pobreza es un problema mundial que se ha venido combatiendo a lo largo de los
-años, cada país en forma individual ha implementado medidas y políticas con el único fin de
-reducir su nivel de pobreza o extrema pobreza. En caso particular de Perú, a pesar de los
-índices favorables en la reducción de la pobreza, en determinadas zonas se observa un margen
-significativo en la desigualdad socioeconómica el cual es paralelo al índice del nivel pobreza.
-
-Es importante analizar el comportamiento de los índices de pobreza contrastado con
-indicadores de la desigualdad socioeconómica; para así poder establecer efectividad o
-importancia a lo largo del tiempo. Crear conocimiento dentro de la relación establecida entre
-estos indicadores, de manera que se contraste con la teoría económica ya conocida o se
-generen nuevos aportes.
-
-## 3.2. Justificación practica
-Este trabajo tiene una justificación practica porque con él podrá ser posible su
-aplicación a la realidad para poder hacer frente a la desigualdad socioeconómica que
-predomina en distintas regiones en particular y sobre todo hacer frente a la pobreza que tanto
-sufrimiento ocasiona a una gran parte de la población peruana.
-
-Los resultados de la presente investigación podrán aportar a ver mejor el panorama del
-país y con él se podrán diseñar estrategias de políticas públicas con los que en un mediano
-plazo podamos obtener resultados más eficaces en la reducción de la pobreza y la desigualdad
-socioeconómica en el Perú; además del gran aporte que significara para la toma de decisiones
-a nivel de gobierno.
-
-## 3.3. Justificación metodológica
-Para realizar la investigación sobre la influencia de la desigualdad socioeconómica en
-la pobreza se empleará el método hipotético deductiva, es decir, iremos de los general a lo
-particular; primero se hará una visión general de la desigualdad socioeconómica y de la
-pobreza de la región Latinoamérica para posteriormente, estudiar el caso particular de Perú.
-
-# IV. MARCO TEÓRICO
-
-## 4.1. Marco histórico
-
-### 4.1.1. Enfoque Subjetivo
-De La Piedra (1984), afirma que la pobreza subjetiva “significa considerar que
-cualquier individuo o familia puede opinar sobre qué tan bien se están satisfaciendo sus
-necesidades básicas, en otras palabras, sobre el grado al cual ella misma piensa que sus
-medios les sirven para alcanzar sus fines”. Por tanto, de acuerdo a este juicio se le considera
-pobre o no pobre.
-
-### 4.1.2. Enfoque Relativo
-Según Townsend (1962), en su enfoque de la privación relativa, “se concibe un umbral
-del ingreso, de acuerdo con el tamaño y el tipo de familia, por debajo del cual el abandono o la
-exclusión de la membresía activa de la sociedad se acentúa en forma desproporcionada”.
-
-Para Murillo Alfaro (1993), “en el enfoque de pobreza relativa, la felicidad de un
-individuo o de una familia no depende de su nivel absoluto de consumo o gasto, sino de su
-nivel de logro en las relaciones con otros miembros de la sociedad”. El punto de partida es
-buscar un punto de referencia que pueda ser una media o un grupo social específico. Así, la
-pobreza se define como un estado de necesidades básicas insatisfactorias en relación con la
-sociedad.
-
-### 4.1.3. Enfoque absoluto
-Sen (1981), enfatiza que “existe un núcleo innegable de privación absoluta en la idea
-de pobreza, que conduce a manifestaciones visibles de muerte por hambre, desnutrición y
-penuria en un diagnóstico de la pobreza, sin tener que indagar primero en un panorama
-relativo”. Por lo cual, la idea de pobreza relativa integra y no reemplaza el enfoque de pobreza
-autoritaria.
-
-## 4.2. Marco referencial 
-La desigualad socioeconómica es un tema de poca frecuencia y permanente interés.
-Según Cotler (2011), en los años de 1960 la forma de pensar sobre la desigualdad
-socioeconómica estaba influenciado por la sociología funcionalista - estructuralista, así como
-el Marxismo.
-
-Así, se puede decir que, en las ciencias sociales peruanas, dos enfoques que pretenden
-ser "gran teoría" han sido muy influyentes desde la década de 1960: el funcionalismo
-estructural y el marxismo.
-
-Según Jiménez (2016), la desigualdad es un problema porque afecta a la calidad de
-vida de las personas y restringe las capacidades y libertades individuales.
-
-Por tanto, la desigualdad se considera como una externalidad negativa donde las
-personas o familias no están dispuestos a tolerar altos niveles de desigualdad. Figueroa,
-(2001).
-
-En cuanto a la pobreza, en términos monetarios, alude a la falta de ingresos para poder
-cubrir el costo de una canasta básica de consumo; por otro lado, la carencia de ingresos
-suficientes "está asociada a la carencia del capital humano necesario para acceder a ciertos
-empleos", o a la falta de "capital financiero, tierra y conocimientos gerenciales y tecnológicos
-para desarrollar una actividad empresarial", CEPAL (2000).
-
-Si hacemos referencia a un enfoque más complejo, analizamos al premio Noble
-Amartya Sen, quien menciona: "la pobreza debe concebirse como la privación de capacidades
-básicas y no meramente como la falta de ingresos, que es el criterio habitual con el que se
-identifica la pobreza" (Sen, 2000). Además, el autor afirma que "cuanto mayor sea la cobertura
-de la educación básica y de la asistencia sanitaria, más probable es que incluso las personas
-potencialmente pobres tengan más oportunidades de vencer la miseria" (Sen, 2000).
-
-Otro enfoque para considerar es el de la ya conocida pobreza humana; este enfoque
-propuesto por el Programa de las Naciones Unidad para el Desarrollo (PNUD) afirma que "el
-concepto de pobreza humana considera que la falta de ingreso suficiente es un factor
-importante de privación humana, pero no el único"; por lo tanto, se debe tener en cuenta que
-no todo empobrecimiento puede relacionarse únicamente con el ingreso. "Si el ingreso no es la suma total de la vida humana, la falta de ingreso no puede ser la suma total de la privación
-humana" PNUD (2000).
-
-Para Mendoza y García (2006), la pobreza puede tener cambios más significativos
-manteniéndose un crecimiento económico, pero también es imprescindible el accionar del
-Estado en la promoción de equidad de oportunidades de desarrollo de la persona (inversión en
-capital humano) el cual, en un largo plazo, mediante el incremento de la productividad,
-favorecerá también al crecimiento económico el cual se hará sostenible de forma automática.
-
-Boragina (2006), en su artículo, afirma que existen tres falacias económicas las cuales
-en la economía moderna quedan desfasadas absolutamente, él afirma que: la riqueza es
-dinámica, la producción y distribución son un único fenómeno y que el valor es el que genera
-trabajo; de esta manera, señala que al aferrarnos a las teorías de la economía antigua estamos
-perpetuando la pobreza en el mundo.
-
-## 4.3. Sistema teórico 
-
-### 4.3.1. Desigualdad Socio económica y la Pobreza 
-Desigualdad socio económica. La desigualdad socioeconómica es un problema
-actual, producto del desarrollo desigual entre las diferentes regiones del mundo y la
-imposición de ciertas ideologías o definiciones, el precio de unas personas en relación con
-otras. De hecho, la desigualdad socioeconómica está en la raíz de la discriminación, ya que la
-desigualdad incluye un trato diferente de quienes se encuentran en desventaja económica,
-social o moral.
-
-La Pobreza. Las Naciones Unidas (2021), afirma que “la pobreza va más allá de la
-falta de ingresos y recursos para garantizar medios de vida sostenibles. Es una cuestión de
-derechos humanos”. Entre las diferentes manifestaciones de la pobreza se encuentran: el
-hambre, la desnutrición, la falta de una vivienda digna y el acceso limitado a otros servicios
-básicos como la salud o la educación.
-
-Para el BID “la pobreza es la privación de bienestar, entendiendo el bienestar un
-concepto bastante complejo y amplio, y su nivel más básico abarca aspectos como la
-alimentación, vestido, salud, y vivienda”
-
-Mientras para el Banco Mundial (2018), “la pobreza no solo implica falta de ingresos
-y consumo: también se manifiesta por bajos niveles de educación, resultados insatisfactorios
-en salud y nutrición, falta de acceso a servicios básicos.”
-
-Según INEI, (2007) “la pobreza se define como un grupo de personas que no alcanzan
-un nivel mínimo de satisfacción para una serie de necesidades básicas relacionadas con la
-salud, la nutrición, la educación, la vivienda y otros.”
-
-### 4.3.2. Empleo e Índice de Desarrollo Humano (IDH) 
-### 4.3.3. Índice de Theilen y grado de pobreza
-### 4.3.4. Desempleo e Índice de Gini
-
-## 4.4. Marco conceptual 
-### 4.4.1. Desigualdad socioeconómica 
-### 4.4.2. La Pobreza 
-### 4.4.3. Empleo 
-### 4.4.4. Índice de Desarrollo Humano (IDH) 
-### 4.4.5. Índice de Theilen 
-### 4.4.6. Grado de pobreza
-### 4.4.7. Desempleo 
-### 4.4.8. Índice de Gini
-
-# V. HIPÓTESIS
-## 5.1. Hipótesis general
-La desigualdad socioeconómica determina negativamente el grado de pobreza en el
-departamento de Ayacucho, periodo 2000-2019.
-
-## 5.2. Hipótesis especifica 
-El empleo afecta inversamente al IDH en el departamento de Ayacucho, periodo
-2000-2019.
-
-El índice de Theilen se relaciona directamente al grado de pobreza en el departamento
-de Ayacucho, periodo 2000-2019.
-
-El desempleo influye directamente en el índice de Gini en el departamento de
-Ayacucho, periodo 2000-2019.
-
-# VI.VARIABLES E INDICADORES 
-
-## 6.1. Desigualdad socio-económica y dimensiones 
-
-### 6.1.1. Variable causa 
-X= Desigualdad socioeconómica
-Indicadores:
-Empleo
-Índice de Theilen
-Desempleo
-
-### 6.1.2. Variable efecto 
-## 6.2. Operacionales de variables y dimensiones 
-
-# VII.METODOLOGÍA
-
-## 7.1. Tipo y nivel de investigación 
-Por el tipo de investigación, la presente investigación reúne las condiciones
-metodológicas de una investigación longitudinal según el alcance temporal investigación
-aplicada, en razón que se utilizaron conocimientos de las ciencias económicas a fin de
-aplicarlas en desigualad socioeconómica y la pobreza en el departamento Ayacucho, periodo
-2000-2019.
-
-### 7.1.1. Tipo de investigación 
-De acuerdo a la naturaleza del estudio de la investigación reúne por su nivel las
-características de un estudio descriptivo explicativo y correlacional.
-
-### 7.1.2. Nivel de investigación 
-
-## 7.2. Población y muestra
-
-### 7.2.1. Población 
-Según Córdova (2006), la población o universo es la totalidad de personas u objetos
-que tienen una o más características medibles o contables de naturaleza cualitativa o
-cuantitativa.
-
-Para Hilario (2020), la población es un conjunto de elementos que posee
-características similares.
-
-### 7.2.2. Muestra
-## 7.3. Fuentes de información 
-Los datos usados son de nivel secundario, es decir, son datos ya procesados. Se ha
-recurrido a la información brindada por las páginas del INEI y BCRP, pues son las
-instituciones que han venido desarrollando diferentes encuestas y estudios a lo largo de los
-años y han consignado datos fidedignos los cuales pueden emplearse en todo tipo de
-investigación que lo requiera.
-
-## 7.4. Diseño de investigación
-Para el diseño de nuestra investigación emplearemos un tipo de investigación no
-experimental, el cual a su vez es longitudinal porque nuestra variable se estudia para
-determinar o evolución en el tiempo.
-
-## 7.5. Técnicas e instrumentos
-### 7.5.1. Técnicas 
-Las principales técnicas que se utilizaran en esta investigación para el análisis de series
-de tiempo son:
-
-Las metodologías econométricas y
-
-estadística inferencial
-
-### 7.5.2. Instrumentos 
-
-Los principales instrumentos que se aplicarán en las técnicas son:
-
-Stata
-
-Excel
-
-Eviews
-
-# VIII. REFERENCIAS BIBLIOGRÁFICAS
-
-# CONCLUSIONES
-1. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbiauctor lorem
-non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,tellus. Donec aliquet,
-tortor sed accumsan bibendum, erat ligula aliquet magna,vitae ornare odio metus a mi.
-
-2. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbiauctor lorem
-non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,tellus. Donec aliquet,
-tortor sed accumsan bibendum, erat ligula aliquet magna,vitae ornare odio metus a mi.
-
-3. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbiauctor lorem
-non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,tellus. Donec aliquet,
-tortor sed accumsan bibendum, erat ligula aliquet magna,vitae ornare odio metus a mi.
-
-# RECOMENDACIONES
-1. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbiauctor lorem
-non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,tellus. Donec aliquet,
-tortor sed accumsan bibendum, erat ligula aliquet magna,vitae ornare odio metus a mi.
-
-2. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbiauctor lorem
-non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,tellus. Donec aliquet,
-tortor sed accumsan bibendum, erat ligula aliquet magna,vitae ornare odio metus a mi.
-
-3. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbiauctor lorem
-non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,tellus. Donec aliquet,
-tortor sed accumsan bibendum, erat ligula aliquet magna,vitae ornare odio metus a mi.
-
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r, eval=my_output == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-## Including Plots
+<center><img src='images/cover.png' style = 'width:60%;'></center>
 
-You can also embed plots, for example:
+<br> Chair of Econometrics <img style='float: right; margin: 0px 100px 0px 0px; width:35%' src='images/logo_claim_en_rgb.png'/> <br> Department of Business Administration and Economics <br> University of Duisburg-Essen <br> Essen, Germany <br> <a href=\"mailto:info@econometrics-with-r.org?subject=Econometrics%20with%20R\">info@econometrics-with-r.org</a> <br><br> `r sf <- lubridate::stamp_date('Last updated on Tuesday, September 4, 2018'); sf(Sys.Date())`
+<br>
+<br>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FEconometricsWithR%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="400" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" align="left"></iframe>
+<br>
+<br>
+<br>
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Over the recent years, the statistical programming language R has become an integral part of the curricula of econometrics classes we teach at the University of Duisburg-Essen. We regularly found that a large share of the students, especially in our introductory undergraduate econometrics courses, have not been exposed to any programming language before and thus have difficulties to engage with learning R on their own. With little background in statistics and econometrics, it is natural for beginners to have a hard time understanding the benefits of having R skills for learning and applying econometrics. These particularly include the ability to conduct, document and communicate empirical studies and having the facilities to program simulation studies which is helpful for, e.g., comprehending and validating theorems which usually are not easily grasped by mere brooding over formulas. Being applied economists and econometricians, all of the latter are capabilities we value and wish to share with our students.
+
+Instead of confronting students with pure coding exercises and complementary classic literature like the book by @venables2010, we figured it would be better to provide interactive learning material that blends R code with the contents of the well-received textbook *Introduction to Econometrics* by @stock2015 which serves as a basis for the lecture. This material is gathered in the present book *Introduction to Econometrics with R*, an empirical companion to @stock2015. It is an interactive script in the style of a reproducible research report and enables students not only to learn how results of case studies can be replicated with R but also strengthens their ability in using the newly acquired skills in other empirical applications.
+
+#### Conventions Used in this Book {-}
+
++ *Italic* text indicates new terms, names, buttons and alike.
+
++ `r ttcode("Constant width text")` is generally used in paragraphs to refer to `r ttcode("R")` code. This includes commands, variables, functions, data types, databases and file names. 
+
++ <code>Constant width text on gray background</code> indicates `r ttcode("R")` code that can be typed literally by you. It may appear in paragraphs for better distinguishability among executable and non-executable code statements but it will mostly be encountered in shape of large blocks of `r ttcode("R")` code. These blocks are referred to as code chunks. 
+
+#### Acknowledgement {-}
+
+We thank the *Stifterverband für die Deutsche Wissenschaft e.V.* and the *Ministry of Culture and Science of North Rhine-Westphalia* for their financial support. Also, we are grateful to Alexander Blasberg for proofreading and his effort in helping with programming the exercises.
+A special thanks goes to Achim Zeileis (University of Innsbruck) and Christian Kleiber (University of Basel) for their advice and constructive criticism. Another thanks goes to Rebecca Arnold from the Münster University of Applied Sciences for several suggestions regarding the website design and for providing us with her nice designs for the book cover, logos and icons. We are also indebted to all past students of our introductory econometrics courses at the University of Duisburg-Essen for their feedback.
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<br>
+![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.eu.svg)
+
+This book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).')
+```
+
+# Introduction
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+The interest in the freely available statistical programming language and software environment `r ttcode("R")` [@R-base] is soaring. By the time we wrote first drafts for this project, more than 11000 add-ons (many of them providing cutting-edge methods) were made available on the Comprehensive `r ttcode("R")` Archive Network ([CRAN](https://cran.r-project.org/)), an extensive network of FTP servers around the world that store identical and up-to-date versions of `r ttcode("R")` code and its documentation. `r ttcode("R")` dominates other (commercial) software for statistical computing in most fields of research in applied statistics. The benefits of it being freely available, open source and having a large and constantly growing community of users that contribute to CRAN render `r ttcode("R")` more and more appealing for empirical economists and econometricians alike. 
+
+A striking advantage of using `r ttcode("R")` in econometrics is that it enables students to explicitly document their analysis step-by-step such that it is easy to update and to expand. This allows to re-use code for similar applications with different data. Furthermore, `r ttcode("R")` programs are fully reproducible, which makes it straightforward for others to comprehend and validate results. 
+
+Over the recent years, `r ttcode("R")` has thus become an integral part of the curricula of econometrics classes we teach at the University of Duisburg-Essen. In some sense, learning to code is comparable to learning a foreign language and continuous practice is essential for the learning success. Needless to say, presenting bare `r ttcode("R")` code on slides does not encourage the students to engage with hands-on experience on their own. This is why `r ttcode("R")` is crucial. As for accompanying literature, there are some excellent books that deal with `r ttcode("R")` and its applications to econometrics, e.g., @kleiber2008. However, such sources may be somewhat beyond the scope of undergraduate students in economics having little understanding of econometric methods and barely any experience in programming at all. Consequently, we started to compile a collection of reproducible reports for use in class. These reports provide guidance on how to implement selected applications from the textbook *Introduction to Econometrics* [@stock2015] which serves as a basis for the lecture and the accompanying tutorials. This process was facilitated considerably by `r ttcode("knitr")` [@R-knitr] and `r ttcode("R markdown")` [@R-rmarkdown]. In conjunction, both `r ttcode("R")` packages provide powerful functionalities for dynamic report generation which allow to seamlessly combine pure text, LaTeX, `r ttcode("R")` code and its output in a variety of formats, including PDF and HTML. Moreover, writing and distributing reproducible reports for use in academia has been enriched tremendously by the `r ttcode("bookdown")` package [@R-bookdown] which has become our main tool for this project. `r ttcode("bookdown")` builds on top of `r ttcode("R markdown")` and allows to create appealing HTML pages like this one, among other things. 
+Being inspired by *Using R for Introductory Econometrics* [@heiss2016]^[@heiss2016 builds on the popular *Introductory Econometrics* [@wooldridge2016] and demonstrates how to replicate the applications discussed therein using `r ttcode("R")`.] and with this powerful toolkit at hand we wrote up our own empirical companion to @stock2015. The result, which you started to look at, is *Introduction to Econometrics with R*. 
+
+Similarly to the book by @heiss2016, this project is neither a comprehensive econometrics textbook nor is it intended to be a general introduction to `r ttcode("R")`. We feel that Stock and Watson do a great job at explaining the intuition and theory of econometrics, and at any rate better than we could in yet another introductory textbook! *Introduction to Econometrics with R* is best described as an interactive script in the style of a reproducible research report which aims to provide students with a platform-independent e-learning arrangement by seamlessly intertwining theoretical core knowledge and empirical skills in undergraduate econometrics. Of course, the focus is on empirical applications with `r ttcode("R")`. We leave out derivations and proofs wherever we can. Our goal is to enable students not only to learn how results of case studies can be replicated with `r ttcode("R")` but we also intend to strengthen their ability in using the newly acquired skills in other empirical applications --- immediately within *Introduction to Econometrics with R*. 
+
+To realize this, each chapter contains interactive `r ttcode("R")` programming exercises. These exercises are used as supplements to code chunks that display how previously discussed techniques can be implemented within `r ttcode("R")`. They are generated using the [DataCamp light widget](https://github.com/datacamp/datacamp-light) and are backed by an `r ttcode("R")` session which is maintained on [DataCamp](https://www.datacamp.com/home)'s servers. You may play around with the example exercise presented below.
+
+<iframe src="DCL/intro_1.html" frameborder="0" scrolling="no" style="width:100%;height:360px"></iframe>
+
+As you can see above, the widget consists of two tabs. `r ttcode("script.R")` mimics an `r ttcode(".R")`-file, a file format that is commonly used for storing `r ttcode("R")` code. Lines starting with a # are commented out, that is, they are not recognized as code. Furthermore, `r ttcode("script.R")` works like an exercise sheet where you may write down the solution you come up with. If you hit the button *Run*, the code will be executed, submission correctness tests are run and you will be notified whether your approach is correct. If it is not correct, you will receive feedback suggesting improvements or hints. The other tab, `r ttcode("R Console")`, is a fully functional `r ttcode("R")` console that can be used for trying out solutions to exercises before submitting them. Of course you may submit (almost any) `r ttcode("R")` code and use the console to play around and explore. Simply type a command and hit the *Enter* key on your keyboard.
+
+Looking at the widget above, you will notice that there is a <tt>></tt> in the right panel (in the console). This symbol is called "prompt" and indicates that the user can enter code that will be executed. To avoid confusion, we will not show this symbol in this book. Output produced by R code is commented out with <tt>#></tt>. 
+
+Most commonly we display R code together with the generated output in code chunks. As an example, consider the following line of code presented in chunk below. It tells `r ttcode("R")` to compute the number of packages available on `r ttcode("CRAN")`. The code chunk is followed by the output produced.
+
+```{r}
+# check the number of R packages available on CRAN
+nrow(available.packages(repos = "http://cran.us.r-project.org"))
+```
+
+Each code chunk is equipped with a button on the outer right hand side which copies the code to your clipboard. This makes it convenient to work with larger code segments in your version of <tt>R</tt>/*RStudio* or in the widgets presented throughout the book. In the widget above, you may click on `r ttcode("R Console")` and type `nrow(available.packages(repos = "http://cran.us.r-project.org"))` (the command from the code chunk above) and execute it by hitting *Enter* on your keyboard.^[The `r ttcode("R")` session is initialized by clicking into the widget. This might take a few seconds. Just wait for the indicator next to the button *Run* to turn green.] 
+
+Note that some lines in the widget are out-commented which ask you to assign a numeric value to a variable and then to print the variable's content to the console. You may enter your solution approach to `r ttcode("script.R")` and hit the button *Run* in order to get the feedback described further above. In case you do not know how to solve this sample exercise (don't panic, that is probably why you are reading this), a click on *Hint* will provide you with some advice. If you still can't find a solution, a click on *Solution* will provide you with another tab, `r ttcode("Solution.R")` which contains sample solution code. It will often be the case that exercises can be solved in many different ways and `r ttcode("Solution.R")` presents what we consider as comprehensible and idiomatic.
+
+## Colophon
+
+This book was build with:
+
+```{r, echo = FALSE}
+sessioninfo::session_info("itewrpkg")
+```
+
+## A Very Short Introduction to `r ttcode("R")` and *RStudio*
+
+```{r, fig.align='center', echo=FALSE, fig.cap="RStudio: the four panes"}
+knitr::include_graphics('images/rstudio.jpg')
+```
+
+#### `r ttcode("R")` Basics {-}
+
+As mentioned before, this book is not intended to be an introduction to `r ttcode("R")` but a guide on how to use its capabilities for applications commonly encountered in undergraduate econometrics. Those having basic knowledge in `r ttcode("R")` programming will feel comfortable starting with Chapter \@ref(pt). This section, however, is meant for those who have not worked with `r ttcode("R")` or *RStudio* before. If you at least know how to create objects and call functions, you can skip it. If you would like to refresh your skills or get a feeling for how to work with *RStudio*, keep reading.
+
+First of all, start *RStudio* and open a new `r ttcode("R")` script by selecting *File*, *New File*, *R Script*. In the editor pane, type
+
+```{r, eval = F}
+1 + 1
+```
+
+and click on the button labeled *Run* in the top right corner of the editor. By doing so, your line of code is sent to the console and the result of this operation should be displayed right underneath it. As you can see, `r ttcode("R")` works just like a calculator. You can do all arithmetic calculations by using the corresponding operator (`r ttcode("+")`, `r ttcode("-")`, `r ttcode("*")`, `r ttcode("/")` or `r ttcode("^")`). If you are not sure what the last operator does, try it out and check the results.
+
+#### Vectors {-}
+
+`r ttcode("R")` is of course more sophisticated than that. We can work with variables or, more generally, objects. Objects are defined by using the assignment operator `r ttcode("<-")`. To create a variable named `r ttcode("x")` which contains the value `r ttcode("10")` type `x <- 10` and click the button *Run* yet again. The new variable should have appeared in the environment pane on the top right. The console however did not show any results, because our line of code did not contain any call that creates output. When you now type `x` in the console and hit return, you ask `r ttcode("R")` to show you the value of `r ttcode("x")` and the corresponding value should be printed in the console.
+
+`r ttcode("x")` is a scalar, a vector of length $1$. You can easily create longer vectors by using the function `r ttcode("c()")` (*c* is for "concatenate" or "combine"). To create a vector `r ttcode("y")` containing the numbers $1$ to $5$ and print it, do the following.
+
+```{r, eval = T}
+y <- c(1, 2, 3, 4, 5)
+y
+```
+
+You can also create a vector of letters or words. For now just remember that characters have to be surrounded by quotes, else they will be parsed as object names.
+
+```{r, eval = F}
+hello <- c("Hello", "World")
+```
+
+Here we have created a vector of length 2 containing the words `r ttcode("Hello")` and `r ttcode("World")`. 
+
+Do not forget to save your script! To do so, select *File*, *Save*.
+
+#### Functions {-}
+
+You have seen the function `r ttcode("c()")` that can be used to combine objects. In general, all function calls look the same: a function name is always followed by round parentheses. Sometimes, the parentheses include arguments.
+
+Here are two simple examples.
+
+```{r, eval = T}
+# generate the vector `z`
+z <- seq(from = 1, to = 5, by = 1)
+
+# compute the mean of the enries in `z`
+mean(z)
+```
+
+In the first line we use a function called `r ttcode("seq()")` to create the exact same vector as we did in the previous section, calling it `r ttcode("z")`. The function takes on the arguments `r ttcode("from")`, `r ttcode("to")` and `r ttcode("by")` which should be self-explanatory.
+The function `r ttcode("mean()")` computes the arithmetic mean of its argument `r ttcode("x")`. Since we pass the vector `r ttcode("z")` as the argument `r ttcode("x")`, the result is `r ttcode("3")`!
+
+If you are not sure which arguments a function expects, you may consult the function's documentation. Let's say we are not sure how the arguments required for `r ttcode("seq()")` work. We then type `?seq` in the console. By hitting return the documentation page for that function pops up in the lower right pane of *RStudio*. In there, the section *Arguments* holds the information we seek. On the bottom of almost every help page you find examples on how to use the corresponding functions. This is very helpful for beginners and we recommend to look out for those.
+
+Of course, all of the commands presented above also work in interactive widgets throughout the book. You may try them below.
+
+```{r, echo=FALSE, results='asis'}
+write_html(playground = T)
+```
+
+
+
+
