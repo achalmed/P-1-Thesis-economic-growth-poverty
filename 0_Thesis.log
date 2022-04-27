@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  25 APR 2022 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  27 APR 2022 01:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,7 +691,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box59
 ))
-(./Preample/0_0_Preambulo.tex
+(./preample/0_0_Preambulo.tex
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks30
@@ -865,27 +865,26 @@ File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 s.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-\@input{Preample/0_1_Caratula.aux}
-\openout2 = `Preample/0_1_Caratula.aux'.
+\@input{preample/0_1_Caratula.aux}
+\openout2 = `preample/0_1_Caratula.aux'.
 
-(./Preample/0_1_Caratula.tex) (./0_Thesis.aux
+(./preample/0_1_Caratula.tex) (./0_Thesis.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
- (./Preample/0_2_Permisos.aux)
-(./Preample/0_3_Dedicatoria.aux) (./Preample/0_4_Agradecimientos.aux)
-(./Preample/0_5_Resumen.aux) (./Preample/0_6_Abstract.aux)
-(./Preample/0_7_Prologo.aux)
-(./Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.aux)
-(./Chapters/Ch_2_Objetivos/Ch_2_Objetivos.aux)
-(./Chapters/Ch_3_Justificacion/Ch_3_Justificacion.aux)
-(./Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.aux)
-(./Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.aux)
-(./Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.aux)
-(./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux) (./References/References.aux
-) (./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux)
-(./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux))
+ (./preample/0_2_Permisos.aux)
+(./preample/0_3_Dedicatoria.aux) (./preample/0_4_Agradecimientos.aux)
+(./preample/0_5_Resumen.aux) (./preample/0_6_Abstract.aux)
+(./preample/0_7_Prologo.aux) (./chapters/chapter1/chapter1.aux)
+(./chapters/chapter2/Ch_2_Objetivos.aux)
+(./chapters/chapter3/Ch_3_Justificacion.aux)
+(./chapters/chapter4/Ch_4_Marco_teorico.aux)
+(./chapters/chapter5/Ch_5_Hipotesis.aux)
+(./chapters/chapter6/Ch_6_Variables_indicadores.aux)
+(./chapters/chapter7/Ch_7_Metodologia.aux) (./references/References.aux)
+(./chapters/chapter8/Ch_8_Conclusiones.aux)
+(./chapters/chapter9/Ch_9_Recomendaciones.aux))
 \openout1 = `0_Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1009,9 +1008,9 @@ LaTeX Info: Redefining \% on input line 29.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `Preample/0_2_Permisos.aux'.
+\openout2 = `preample/0_2_Permisos.aux'.
 
- (./Preample/0_2_Permisos.tex
+ (./preample/0_2_Permisos.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
 .
 
@@ -1021,18 +1020,18 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ])
-\openout2 = `Preample/0_3_Dedicatoria.aux'.
+\openout2 = `preample/0_3_Dedicatoria.aux'.
 
 
-(./Preample/0_3_Dedicatoria.tex [3
+(./preample/0_3_Dedicatoria.tex [3
 
 
 
 
 ])
-\openout2 = `Preample/0_4_Agradecimientos.aux'.
+\openout2 = `preample/0_4_Agradecimientos.aux'.
 
- (./Preample/0_4_Agradecimientos.tex
+ (./preample/0_4_Agradecimientos.tex
 Overfull \hbox (36.135pt too wide) in paragraph at lines 3--3
 [][]  
  []
@@ -1137,34 +1136,31 @@ LaTeX Info: Redefining \% on input line 2.
 \openout10 = `0_Thesis.lot'.
 
  [5]
-\openout2 = `Preample/0_5_Resumen.aux'.
+\openout2 = `preample/0_5_Resumen.aux'.
 
- (./Preample/0_5_Resumen.tex)
+ (./preample/0_5_Resumen.tex)
 [6
 
 
 ]
-\openout2 = `Preample/0_6_Abstract.aux'.
+\openout2 = `preample/0_6_Abstract.aux'.
 
- (./Preample/0_6_Abstract.tex) [7
+ (./preample/0_6_Abstract.tex) [7
 
 
 
 ]
-\openout2 = `Preample/0_7_Prologo.aux'.
+\openout2 = `preample/0_7_Prologo.aux'.
 
 
-No file Preample/0_7_Prologo.tex.
-\openout2 = `Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.a
-ux'.
+No file preample/0_7_Prologo.tex.
+\openout2 = `chapters/chapter1/chapter1.aux'.
 
-(./Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.tex
-<Images/Ch_1_Planteamiento_problema/Imagen1.jpg, id=283, 426.831pt x 227.541pt>
-
-File: Images/Ch_1_Planteamiento_problema/Imagen1.jpg Graphic file (type jpg)
-<use Images/Ch_1_Planteamiento_problema/Imagen1.jpg>
-Package pdftex.def Info: Images/Ch_1_Planteamiento_problema/Imagen1.jpg  used o
-n input line 20.
+(./chapters/chapter1/chapter1.tex
+<images/chapter1/Imagen1.jpg, id=283, 426.831pt x 227.541pt>
+File: images/chapter1/Imagen1.jpg Graphic file (type jpg)
+<use images/chapter1/Imagen1.jpg>
+Package pdftex.def Info: images/chapter1/Imagen1.jpg  used on input line 20.
 (pdftex.def)             Requested size: 341.46524pt x 182.03304pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1177,71 +1173,66 @@ l.29
 
 
 ]
-<Images/Ch_1_Planteamiento_problema/Imagen2.jpg, id=289, 426.831pt x 227.541pt>
-
-File: Images/Ch_1_Planteamiento_problema/Imagen2.jpg Graphic file (type jpg)
-<use Images/Ch_1_Planteamiento_problema/Imagen2.jpg>
-Package pdftex.def Info: Images/Ch_1_Planteamiento_problema/Imagen2.jpg  used o
-n input line 40.
+<images/chapter1/Imagen2.jpg, id=289, 426.831pt x 227.541pt>
+File: images/chapter1/Imagen2.jpg Graphic file (type jpg)
+<use images/chapter1/Imagen2.jpg>
+Package pdftex.def Info: images/chapter1/Imagen2.jpg  used on input line 40.
 (pdftex.def)             Requested size: 341.46524pt x 182.03304pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.49 
-      [2 <./Images/Ch_1_Planteamiento_problema/Imagen1.jpg>]
-<Images/Ch_1_Planteamiento_problema/Imagen3.jpg, id=294, 426.831pt x 227.541pt>
-
-File: Images/Ch_1_Planteamiento_problema/Imagen3.jpg Graphic file (type jpg)
-<use Images/Ch_1_Planteamiento_problema/Imagen3.jpg>
-Package pdftex.def Info: Images/Ch_1_Planteamiento_problema/Imagen3.jpg  used o
-n input line 54.
+      [2 <./images/chapter1/Imagen1.jpg>]
+<images/chapter1/Imagen3.jpg, id=294, 426.831pt x 227.541pt>
+File: images/chapter1/Imagen3.jpg Graphic file (type jpg)
+<use images/chapter1/Imagen3.jpg>
+Package pdftex.def Info: images/chapter1/Imagen3.jpg  used on input line 54.
 (pdftex.def)             Requested size: 341.46524pt x 182.03304pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.65 
-      [3 <./Images/Ch_1_Planteamiento_problema/Imagen2.jpg> <./Images/Ch_1_Plan
-teamiento_problema/Imagen3.jpg>])pdfTeX warning (ext4): destination with the sa
-me identifier (name{page.4}) has been already used, duplicate ignored
+      [3 <./images/chapter1/Imagen2.jpg> <./images/chapter1/Imagen3.jpg>])pdfTe
+X warning (ext4): destination with the same identifier (name{page.4}) has been 
+already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 ...ento_problema/Ch_1_Planteamiento_problema}
-                                                   [4]
-\openout2 = `Chapters/Ch_2_Objetivos/Ch_2_Objetivos.aux'.
+l.69 	\include{chapters/chapter1/chapter1}
+                                           [4]
+\openout2 = `chapters/chapter2/Ch_2_Objetivos.aux'.
 
 
-(./Chapters/Ch_2_Objetivos/Ch_2_Objetivos.tex) [5
-
-
-]
-\openout2 = `Chapters/Ch_3_Justificacion/Ch_3_Justificacion.aux'.
-
-
-(./Chapters/Ch_3_Justificacion/Ch_3_Justificacion.tex) [6
+(./chapters/chapter2/Ch_2_Objetivos.tex) [5
 
 
 ]
-\openout2 = `Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.aux'.
+\openout2 = `chapters/chapter3/Ch_3_Justificacion.aux'.
 
 
-(./Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.tex [7
-
-
-] [8] [9] [10] [11]
-[12] [13] [14]) [15]
-\openout2 = `Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.aux'.
-
- (./Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.tex) [16
+(./chapters/chapter3/Ch_3_Justificacion.tex) [6
 
 
 ]
-\openout2 = `Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.aux
-'.
+\openout2 = `chapters/chapter4/Ch_4_Marco_teorico.aux'.
 
 
-(./Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.tex
+(./chapters/chapter4/Ch_4_Marco_teorico.tex [7
+
+
+] [8] [9] [10] [11] [12] [13]
+[14]) [15]
+\openout2 = `chapters/chapter5/Ch_5_Hipotesis.aux'.
+
+ (./chapters/chapter5/Ch_5_Hipotesis.tex) [16
+
+
+]
+\openout2 = `chapters/chapter6/Ch_6_Variables_indicadores.aux'.
+
+
+(./chapters/chapter6/Ch_6_Variables_indicadores.tex
 Overfull \hbox (2114.68669pt too wide) in paragraph at lines 32--39
 [][] 
  []
@@ -1250,32 +1241,32 @@ Overfull \hbox (2114.68669pt too wide) in paragraph at lines 32--39
 
 
 ]
-\openout2 = `Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux'.
+\openout2 = `chapters/chapter7/Ch_7_Metodologia.aux'.
 
- (./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.tex [18
+ (./chapters/chapter7/Ch_7_Metodologia.tex [18
 
 
 ]) [19]
-\openout2 = `References/References.aux'.
+\openout2 = `references/References.aux'.
 
 
-(./References/References.tex (./0_Thesis.bbl)) [20
-
-
-
-]
-\openout2 = `Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux'.
-
-
-(./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.tex) [21
+(./references/references.tex (./0_Thesis.bbl)) [20
 
 
 
 ]
-\openout2 = `Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux'.
+\openout2 = `chapters/chapter8/Ch_8_Conclusiones.aux'.
 
 
-(./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.tex) [22
+(./chapters/chapter8/Ch_8_Conclusiones.tex) [21
+
+
+
+]
+\openout2 = `chapters/chapter9/Ch_9_Recomendaciones.aux'.
+
+
+(./chapters/chapter9/Ch_9_Recomendaciones.tex) [22
 
 
 
@@ -1289,27 +1280,26 @@ LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 
-(./Preample/0_2_Permisos.aux) (./Preample/0_3_Dedicatoria.aux)
-(./Preample/0_4_Agradecimientos.aux) (./Preample/0_5_Resumen.aux)
-(./Preample/0_6_Abstract.aux) (./Preample/0_7_Prologo.aux)
-(./Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.aux)
-(./Chapters/Ch_2_Objetivos/Ch_2_Objetivos.aux)
-(./Chapters/Ch_3_Justificacion/Ch_3_Justificacion.aux)
-(./Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.aux)
-(./Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.aux)
-(./Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.aux)
-(./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux) (./References/References.aux
-) (./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux)
-(./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux))
+(./preample/0_2_Permisos.aux) (./preample/0_3_Dedicatoria.aux)
+(./preample/0_4_Agradecimientos.aux) (./preample/0_5_Resumen.aux)
+(./preample/0_6_Abstract.aux) (./preample/0_7_Prologo.aux)
+(./chapters/chapter1/chapter1.aux) (./chapters/chapter2/Ch_2_Objetivos.aux)
+(./chapters/chapter3/Ch_3_Justificacion.aux)
+(./chapters/chapter4/Ch_4_Marco_teorico.aux)
+(./chapters/chapter5/Ch_5_Hipotesis.aux)
+(./chapters/chapter6/Ch_6_Variables_indicadores.aux)
+(./chapters/chapter7/Ch_7_Metodologia.aux) (./references/References.aux)
+(./chapters/chapter8/Ch_8_Conclusiones.aux)
+(./chapters/chapter9/Ch_9_Recomendaciones.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `0_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 049D26FDC64F0DC3F0F2206E1E1096F7;2119.
  ) 
 Here is how much of TeX's memory you used:
- 23962 strings out of 481239
- 448249 string characters out of 5920377
- 957824 words of memory out of 5000000
+ 23963 strings out of 481239
+ 446668 string characters out of 5920377
+ 957825 words of memory out of 5000000
  38440 multiletter control sequences out of 15000+600000
  593321 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1319,7 +1309,7 @@ e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on 0_Thesis.pdf (33 pages, 482575 bytes).
+Output written on 0_Thesis.pdf (33 pages, 482574 bytes).
 PDF statistics:
  454 PDF objects out of 1000 (max. 8388607)
  407 compressed objects within 5 object streams
