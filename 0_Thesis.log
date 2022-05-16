@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  2 MAY 2022 23:17
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  2 MAY 2022 07:18
+>>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,7 +695,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box59
 ))
-(./Preample/0_0_Preambulo.tex
+(./preamble/preamble.tex
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks30
@@ -864,15 +868,82 @@ File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
 s.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))
-\@input{Preample/0_1_Caratula.aux}
-\openout2 = `Preample/0_1_Caratula.aux'.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks36
+\thm@bodyfont=\toks37
+\thm@headfont=\toks38
+\thm@notefont=\toks39
+\thm@headpunct=\toks40
+\thm@preskip=\skip94
+\thm@postskip=\skip95
+\thm@headsep=\skip96
+\dth@everypar=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-(./Preample/0_1_Caratula.tex) (./0_Thesis.aux
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count310
+\rotFPtop=\skip97
+\rotFPbot=\skip98
+\rot@float@box=\box66
+\rot@mess@toks=\toks42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen288
+\TX@old@table=\dimen289
+\TX@old@col=\dimen290
+\TX@target=\dimen291
+\TX@delta=\dimen292
+\TX@cols=\count311
+\TX@ftn=\toks43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks44
+\verbatim@line=\toks45
+\verbatim@in@stream=\read4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks46
+)
+\tcb@titlebox=\box67
+\tcb@upperbox=\box68
+\tcb@lowerbox=\box69
+\tcb@phantombox=\box70
+\c@tcbbreakpart=\count312
+\c@tcblayer=\count313
+\tcolorbox@number=\count314
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@out=\write7
+\tcb@record@out=\write8
+)
+\c@tcb@cnt@keyconcepts=\count315
+)
+\@input{preamble/caratula.aux}
+\openout2 = `preamble/caratula.aux'.
+
+(./preamble/caratula.tex) (./0_Thesis.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
+<<<<<<< HEAD
  (./Preample/0_2_Permisos.aux)
 (./Preample/0_3_Dedicatoria.aux) (./Preample/0_4_Agradecimientos.aux)
 (./Preample/0_5_Resumen.aux) (./Preample/0_6_Abstract.aux)
@@ -886,6 +957,17 @@ LaTeX Info: Redefining \% on input line 26.
 (./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux) (./References/references.aux
 ) (./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux)
 (./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux))
+=======
+ (./preamble/permiso.aux)
+(./preamble/dedicatoria.aux) (./preamble/agradecimiento.aux)
+(./preamble/resumen.aux) (./preamble/abstract.aux) (./preamble/prologo.aux)
+(./chapters/chapter1/chapter1.aux) (./chapters/chapter2/chapter2.aux)
+(./chapters/chapter3/chapter3.aux) (./chapters/chapter4/chapter4.aux)
+(./chapters/chapter5/chapter5.aux) (./chapters/chapter6/chapter6.aux)
+(./chapters/chapter7/chapter7.aux) (./references/references.aux)
+(./chapters/conclusiones/conclusiones.aux)
+(./chapters/recomendaciones/recomendaciones.aux))
+>>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
 \openout1 = `0_Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -910,7 +992,7 @@ LaTeX Font Info:    Trying to load font information for T1+ptm on input line 29
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-\c@maskedRefs=\count310
+\c@maskedRefs=\count316
 
 (/usr/share/texlive/texmf-dist/tex/latex/apacite/spanish.apc
 File: spanish.apc 2013/07/21 v6.03 apacite language file
@@ -953,17 +1035,17 @@ LaTeX Info: Redefining \BHBI on input line 139.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen288
-\scratchbox=\box66
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen289
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count317
+\scratchdimen=\dimen293
+\scratchbox=\box75
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen294
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -974,7 +1056,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box67
+\AtBeginShipoutBox=\box76
 Package hyperref Info: Link coloring OFF on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -986,32 +1068,87 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count323
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
 
 (./0_Thesis.out) (./0_Thesis.out)
-\@outlinefile=\write7
-\openout7 = `0_Thesis.out'.
+\@outlinefile=\write9
+\openout9 = `0_Thesis.out'.
 
 Class apa7 Info: Language definition file config/APA7spanish.txt not found on i
 nput line 29.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
-\big@size=\dimen290
+\big@size=\dimen295
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 31.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 31.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 31.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 31.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+1.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+1.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+31.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
  [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `Preample/0_2_Permisos.aux'.
+\openout2 = `preamble/permiso.aux'.
 
- (./Preample/0_2_Permisos.tex
+ (./preamble/permiso.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
 .
 
@@ -1021,18 +1158,18 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ])
-\openout2 = `Preample/0_3_Dedicatoria.aux'.
+\openout2 = `preamble/dedicatoria.aux'.
 
 
-(./Preample/0_3_Dedicatoria.tex [3
+(./preamble/dedicatoria.tex [3
 
 
 
 
 ])
-\openout2 = `Preample/0_4_Agradecimientos.aux'.
+\openout2 = `preamble/agradecimiento.aux'.
 
- (./Preample/0_4_Agradecimientos.tex
+ (./preamble/agradecimiento.tex
 Overfull \hbox (36.135pt too wide) in paragraph at lines 3--3
 [][]  
  []
@@ -1047,76 +1184,17 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
-.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
-.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-6.
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
  [1
 
 
 ]
-Overfull \hbox (2.99971pt too wide) detected at line 64
+Overfull \hbox (2.99971pt too wide) detected at line 65
 \T1/ptm/b/n/12 VII. 
  []
 
-[2]
-Overfull \hbox (7.66759pt too wide) detected at line 76
-\T1/ptm/b/n/12 VIII. 
- []
-
-)
-\tf@toc=\write8
-\openout8 = `0_Thesis.toc'.
+[2])
+\tf@toc=\write10
+\openout10 = `0_Thesis.toc'.
 
  [3] (./0_Thesis.lof
 LaTeX Info: Redefining \. on input line 1.
@@ -1124,8 +1202,8 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lof=\write9
-\openout9 = `0_Thesis.lof'.
+\tf@lof=\write11
+\openout11 = `0_Thesis.lof'.
 
  [4] (./0_Thesis.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1133,38 +1211,43 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lot=\write10
-\openout10 = `0_Thesis.lot'.
+\tf@lot=\write12
+\openout12 = `0_Thesis.lot'.
 
  [5]
-\openout2 = `Preample/0_5_Resumen.aux'.
+\openout2 = `preamble/resumen.aux'.
 
- (./Preample/0_5_Resumen.tex)
+ (./preamble/resumen.tex)
 [6
 
 
 ]
-\openout2 = `Preample/0_6_Abstract.aux'.
+\openout2 = `preamble/abstract.aux'.
 
- (./Preample/0_6_Abstract.tex) [7
+ (./preamble/abstract.tex) [7
 
 
 
 ]
-\openout2 = `Preample/0_7_Prologo.aux'.
+\openout2 = `preamble/prologo.aux'.
+
+ (./preamble/prologo.tex) [8
 
 
-No file Preample/0_7_Prologo.tex.
-\openout2 = `Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.a
-ux'.
 
-(./Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.tex
-<Images/Ch_1_Planteamiento_problema/Imagen1.jpg, id=283, 426.831pt x 227.541pt>
+]
+\openout2 = `chapters/chapter1/chapter1.aux'.
 
-File: Images/Ch_1_Planteamiento_problema/Imagen1.jpg Graphic file (type jpg)
-<use Images/Ch_1_Planteamiento_problema/Imagen1.jpg>
-Package pdftex.def Info: Images/Ch_1_Planteamiento_problema/Imagen1.jpg  used o
-n input line 20.
+
+(./chapters/chapter1/chapter1.tex
+
+Package natbib Warning: Citation `Ravallion1991' on page 1 undefined on input l
+ine 11.
+
+<images/chapter1/Imagen1.jpg, id=287, 426.831pt x 227.541pt>
+File: images/chapter1/Imagen1.jpg Graphic file (type jpg)
+<use images/chapter1/Imagen1.jpg>
+Package pdftex.def Info: images/chapter1/Imagen1.jpg  used on input line 20.
 (pdftex.def)             Requested size: 341.46524pt x 182.03304pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1174,74 +1257,70 @@ l.29
       [1
 
 
-
-
 ]
-<Images/Ch_1_Planteamiento_problema/Imagen2.jpg, id=289, 426.831pt x 227.541pt>
-
-File: Images/Ch_1_Planteamiento_problema/Imagen2.jpg Graphic file (type jpg)
-<use Images/Ch_1_Planteamiento_problema/Imagen2.jpg>
-Package pdftex.def Info: Images/Ch_1_Planteamiento_problema/Imagen2.jpg  used o
-n input line 40.
+<images/chapter1/Imagen2.jpg, id=292, 426.831pt x 227.541pt>
+File: images/chapter1/Imagen2.jpg Graphic file (type jpg)
+<use images/chapter1/Imagen2.jpg>
+Package pdftex.def Info: images/chapter1/Imagen2.jpg  used on input line 40.
 (pdftex.def)             Requested size: 341.46524pt x 182.03304pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.49 
-      [2 <./Images/Ch_1_Planteamiento_problema/Imagen1.jpg>]
-<Images/Ch_1_Planteamiento_problema/Imagen3.jpg, id=294, 426.831pt x 227.541pt>
-
-File: Images/Ch_1_Planteamiento_problema/Imagen3.jpg Graphic file (type jpg)
-<use Images/Ch_1_Planteamiento_problema/Imagen3.jpg>
-Package pdftex.def Info: Images/Ch_1_Planteamiento_problema/Imagen3.jpg  used o
-n input line 54.
+      [2 <./images/chapter1/Imagen1.jpg>]
+<images/chapter1/Imagen3.jpg, id=296, 426.831pt x 227.541pt>
+File: images/chapter1/Imagen3.jpg Graphic file (type jpg)
+<use images/chapter1/Imagen3.jpg>
+Package pdftex.def Info: images/chapter1/Imagen3.jpg  used on input line 54.
 (pdftex.def)             Requested size: 341.46524pt x 182.03304pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.65 
-      [3 <./Images/Ch_1_Planteamiento_problema/Imagen2.jpg> <./Images/Ch_1_Plan
-teamiento_problema/Imagen3.jpg>])pdfTeX warning (ext4): destination with the sa
-me identifier (name{page.4}) has been already used, duplicate ignored
+      [3 <./images/chapter1/Imagen2.jpg> <./images/chapter1/Imagen3.jpg>])pdfTe
+X warning (ext4): destination with the same identifier (name{page.4}) has been 
+already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 ...ento_problema/Ch_1_Planteamiento_problema}
-                                                   [4]
-\openout2 = `Chapters/Ch_2_Objetivos/Ch_2_Objetivos.aux'.
+l.69 	\include{chapters/chapter1/chapter1}
+                                           [4]
+\openout2 = `chapters/chapter2/chapter2.aux'.
 
 
-(./Chapters/Ch_2_Objetivos/Ch_2_Objetivos.tex) [5
-
-
-]
-\openout2 = `Chapters/Ch_3_Justificacion/Ch_3_Justificacion.aux'.
-
-
-(./Chapters/Ch_3_Justificacion/Ch_3_Justificacion.tex) [6
+(./chapters/chapter2/chapter2.tex) [5
 
 
 ]
-\openout2 = `Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.aux'.
+\openout2 = `chapters/chapter3/chapter3.aux'.
 
-
-(./Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.tex [7
-
-
-] [8] [9] [10] [11]
-[12] [13] [14]) [15]
-\openout2 = `Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.aux'.
-
- (./Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.tex) [16
+ (./chapters/chapter3/chapter3.tex)
+[6
 
 
 ]
-\openout2 = `Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.aux
-'.
+\openout2 = `chapters/chapter4/chapter4.aux'.
+
+ (./chapters/chapter4/chapter4.tex [7
 
 
-(./Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.tex
+] [8] [9] [10] [11] [12]
+
+Package natbib Warning: Citation `Modigliani1998' on page 13 undefined on input
+ line 137.
+
+[13] [14]) [15]
+\openout2 = `chapters/chapter5/chapter5.aux'.
+
+ (./chapters/chapter5/chapter5.tex) [16
+
+
+]
+\openout2 = `chapters/chapter6/chapter6.aux'.
+
+
+(./chapters/chapter6/chapter6.tex
 Overfull \hbox (2114.68669pt too wide) in paragraph at lines 32--39
 [][] 
  []
@@ -1250,36 +1329,45 @@ Overfull \hbox (2114.68669pt too wide) in paragraph at lines 32--39
 
 
 ]
-\openout2 = `Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux'.
+\openout2 = `chapters/chapter7/chapter7.aux'.
 
- (./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.tex [18
+ (./chapters/chapter7/chapter7.tex [18
 
 
 ]) [19]
+<<<<<<< HEAD
 \openout2 = `References/References.aux'.
 
 
 (./References/references.tex (./0_Thesis.bbl)) [20
+=======
+\openout2 = `references/references.aux'.
+>>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
 
 
+(./references/references.tex
+No file 0_Thesis.bbl.
+)
+\openout2 = `chapters/conclusiones/conclusiones.aux'.
 
-]
-\openout2 = `Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux'.
-
-
-(./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.tex) [21
-
-
-
-]
-\openout2 = `Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux'.
+ (./chapters/conclusiones/conclusiones.tex) [20
 
 
-(./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.tex) [22
 
 
 
 ]
+\openout2 = `chapters/recomendaciones/recomendaciones.aux'.
+
+
+(./chapters/recomendaciones/recomendaciones.tex) [21
+
+
+
+]
+
+Package natbib Warning: There were undefined citations.
+
 AED endfloat: Processing end Figures and Tables
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
@@ -1289,40 +1377,45 @@ LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 
-(./Preample/0_2_Permisos.aux) (./Preample/0_3_Dedicatoria.aux)
-(./Preample/0_4_Agradecimientos.aux) (./Preample/0_5_Resumen.aux)
-(./Preample/0_6_Abstract.aux) (./Preample/0_7_Prologo.aux)
-(./Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.aux)
-(./Chapters/Ch_2_Objetivos/Ch_2_Objetivos.aux)
-(./Chapters/Ch_3_Justificacion/Ch_3_Justificacion.aux)
-(./Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.aux)
-(./Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.aux)
-(./Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.aux)
-(./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux) (./References/References.aux
-) (./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux)
-(./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux))
+(./preamble/permiso.aux) (./preamble/dedicatoria.aux)
+(./preamble/agradecimiento.aux) (./preamble/resumen.aux)
+(./preamble/abstract.aux) (./preamble/prologo.aux)
+(./chapters/chapter1/chapter1.aux) (./chapters/chapter2/chapter2.aux)
+(./chapters/chapter3/chapter3.aux) (./chapters/chapter4/chapter4.aux)
+(./chapters/chapter5/chapter5.aux) (./chapters/chapter6/chapter6.aux)
+(./chapters/chapter7/chapter7.aux) (./references/references.aux)
+(./chapters/conclusiones/conclusiones.aux)
+(./chapters/recomendaciones/recomendaciones.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `0_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 049D26FDC64F0DC3F0F2206E1E1096F7;2119.
+(rerunfilecheck)             Checksum: 3515433A4F06D1A5A0F2068D11425185;2101.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  23963 strings out of 481239
  448259 string characters out of 5920377
  957826 words of memory out of 5000000
  38440 multiletter control sequences out of 15000+600000
  593321 words of font info for 84 fonts, out of 8000000 for 9000
+=======
+ 25901 strings out of 481239
+ 492621 string characters out of 5920377
+ 1004809 words of memory out of 5000000
+ 40354 multiletter control sequences out of 15000+600000
+ 591677 words of font info for 83 fonts, out of 8000000 for 9000
+>>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
  1141 hyphenation exceptions out of 8191
- 68i,13n,68p,828b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,77p,828b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on 0_Thesis.pdf (33 pages, 482575 bytes).
+Output written on 0_Thesis.pdf (33 pages, 483146 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 449 PDF objects out of 1000 (max. 8388607)
+ 402 compressed objects within 5 object streams
+ 124 named destinations out of 1000 (max. 500000)
  284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

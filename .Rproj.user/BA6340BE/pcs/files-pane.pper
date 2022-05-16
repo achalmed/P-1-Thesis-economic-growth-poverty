@@ -1,9 +1,13 @@
 {
     "sortOrder": [
         {
+            "columnIndex": 1,
+            "ascending": false
+        },
+        {
             "columnIndex": 2,
             "ascending": true
         }
     ],
-    "path": "~/Documents/Economic-Research-Seminar/P-1-Thesis-economic-growth-poverty"
+    "path": "~/Documents/GitHub/P-1-Thesis-economic-growth-poverty"
 }
