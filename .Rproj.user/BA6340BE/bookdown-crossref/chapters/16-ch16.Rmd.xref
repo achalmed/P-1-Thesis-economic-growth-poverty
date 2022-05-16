@@ -1,0 +1,19 @@
+h1:atitsr Additional Topics in Time Series Regression
+h2:vector-autoregressions Vector Autoregressions
+h4:a-var-model-of-the-growth-rate-of-gdp-and-the-term-spread A VAR Model of the Growth Rate of GDP and the Term Spread
+h4:iterated-multivariate-forecasts-using-an-iterated-var Iterated Multivariate Forecasts using an Iterated VAR
+h4:direct-multiperiod-forecasts Direct Multiperiod Forecasts
+h2:ooiatdfglsurt Orders of Integration and the DF-GLS Unit Root Test
+h4:the-df-gls-test-for-a-unit-root The DF-GLS Test for a Unit Root
+h2:cointegration Cointegration
+h4:testing-for-cointegration Testing for Cointegration
+h4:application-to-interest-rates Application to Interest Rates
+tab:spreadcoint ADF and DF-GLS Test Statistics for Interest Rate Series
+h5:a-vector-error-correction-model-for-tb10ys_t-and-tb3ms A Vector Error Correction Model for  and 
+h2:volatility-clustering-and-autoregressive-conditional-heteroskedasticity Volatility Clustering and Autoregressive Conditional Heteroskedasticity
+fig:pcw5000 Daily Percentage Returns in the Wilshire 5000 Indrx
+fig:acfw5000 Autocorrelation in Daily Price Changes of W5000 Index
+h3:arch-and-garch-models ARCH and GARCH Models
+h3:application-to-stock-price-volatility Application to Stock Price Volatility
+h3:summary Summary
+

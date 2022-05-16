@@ -1,0 +1,15 @@
+h1:ivr Instrumental Variables Regression
+h2:TIVEWASRAASI The IV Estimator with a Single Regressor and a Single Instrument
+h4:the-two-stage-least-squares-estimator The Two-Stage Least Squares Estimator
+h4:application-to-the-demand-for-cigarettes Application to the Demand For Cigarettes
+h2:TGIVRM The General IV Regression Model
+h4:application-to-the-demand-for-cigarettes-1 Application to the Demand for Cigarettes
+h2:civ Checking Instrument Validity
+h4:instrument-relevance Instrument Relevance
+h4:if-instruments-are-weak If Instruments are Weak
+h4:when-the-assumption-of-instrument-exogeneity-is-violated When the Assumption of Instrument Exogeneity is Violated
+h2:attdfc Application to the Demand for Cigarettes
+h2:where-do-valid-instruments-come-from Where Do Valid Instruments Come From?
+h4:summary Summary
+h2:exercises-12 Exercises
+

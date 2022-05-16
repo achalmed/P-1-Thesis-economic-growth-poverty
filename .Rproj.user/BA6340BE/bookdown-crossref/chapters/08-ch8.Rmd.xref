@@ -1,0 +1,22 @@
+h1:nrf Nonlinear Regression Functions
+h2:a-general-strategy-for-modelling-nonlinear-regression-functions A General Strategy for Modelling Nonlinear Regression Functions
+h2:nfoasiv Nonlinear Functions of a Single Independent Variable
+h3:polynomials Polynomials
+h4:interpretation-of-coefficients-in-nonlinear-regression-models Interpretation of Coefficients in Nonlinear Regression Models
+h3:logarithms Logarithms
+h4:case-i-x-is-in-logarithm-y-is-not. Case I:  is in Logarithm,  is not.
+h4:case-ii-y-is-in-logarithm-x-is-not Case II:  is in Logarithm,  is not
+h4:case-iii-x-and-y-are-in-logarithms Case III:  and  are in Logarithms
+h2:interactions-between-independent-variables Interactions Between Independent Variables
+h4:interactions-between-two-binary-variables Interactions Between Two Binary Variables
+h4:application-to-the-student-teacher-ratio-and-the-percentage-of-english-learners Application to the Student-Teacher Ratio and the Percentage of English Learners
+h4:interactions-between-a-continuous-and-a-binary-variable Interactions Between a Continuous and a Binary Variable
+h4:application-to-the-student-teacher-ratio-and-the-percentage-of-english-learners-1 Application to the Student-Teacher Ratio and the Percentage of English Learners
+h4:interactions-between-two-continuous-variables Interactions Between Two Continuous Variables
+h4:application-to-the-student-teacher-ratio-and-the-percentage-of-english-learners-2 Application to the Student-Teacher Ratio and the Percentage of English Learners
+h4:example-the-demand-for-economic-journals Example: The Demand for Economic Journals
+h2:nonlinear-effects-on-test-scores-of-the-student-teacher-ratio Nonlinear Effects on Test Scores of the Student-Teacher Ratio
+h4:nonlinear-regression-models-of-test-scores Nonlinear Regression Models of Test Scores
+h4:summary Summary
+h2:exercises-8 Exercises
+

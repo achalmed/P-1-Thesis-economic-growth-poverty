@@ -1,0 +1,21 @@
+h1:arosur A Review of Statistics using R
+h2:estimation-of-the-population-mean Estimation of the Population Mean
+h2:potsm Properties of the Sample Mean
+h4:overliney-is-the-least-squares-estimator-of-mu_y  is the Least Squares Estimator of 
+h4:why-random-sampling-is-important Why Random Sampling is Important
+h2:hypothesis-tests-concerning-the-population-mean Hypothesis Tests Concerning the Population Mean
+h4:about-hypotheses-and-hypothesis-testing About Hypotheses and Hypothesis Testing
+h3:the-p-value The p-Value
+h3:calculating-the-p-value-when-the-standard-deviation-is-known Calculating the p-Value when the Standard Deviation is Known
+h3:SVSSDASE Sample Variance, Sample Standard Deviation and Standard Error
+h3:calculating-the-p-value-when-the-standard-deviation-is-unknown Calculating the p-value When the Standard Deviation is Unknown
+h3:the-t-statistic The t-statistic
+h3:hypothesis-testing-with-a-prespecified-significance-level Hypothesis Testing with a Prespecified Significance Level
+h3:one-sided-alternatives One-sided Alternatives
+h2:confidence-intervals-for-the-population-mean Confidence Intervals for the Population Mean
+h2:cmfdp Comparing Means from Different Populations
+h2:aattggoe An Application to the Gender Gap of Earnings
+h2:scatterplots-sample-covariance-and-sample-correlation Scatterplots, Sample Covariance and Sample Correlation
+h4:sample-covariance-and-correlation Sample Covariance and Correlation
+h2:exercises-3 Exercises
+

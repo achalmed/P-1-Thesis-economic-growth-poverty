@@ -1,0 +1,740 @@
+{
+    "sources": [
+        {
+            "URL": "http://www.urfie.net/",
+            "author": [
+                {
+                    "family": "Heiss",
+                    "given": "Florian"
+                }
+            ],
+            "id": "heiss2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "publisher": "CreateSpace Independent Publishing Platform",
+            "title": "Using R for Introductory Econometrics",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Kleiber",
+                    "given": "C."
+                },
+                {
+                    "family": "Zeileis",
+                    "given": "A."
+                }
+            ],
+            "id": "kleiber2008",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ]
+            },
+            "publisher": "Springer",
+            "title": "Applied Econometrics with R",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Stock",
+                    "given": "J. H."
+                },
+                {
+                    "family": "Watson",
+                    "given": "M. W."
+                }
+            ],
+            "id": "stock2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "Pearson Education Limited",
+            "title": "Introduction to Econometrics, Third Update, Global Edition",
+            "type": "book"
+        },
+        {
+            "URL": "http://yihui.name/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "xie2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Dynamic Documents with R and knitr",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wooldridge",
+                    "given": "Jeffrey"
+                }
+            ],
+            "edition": "Sixth",
+            "id": "wooldridge2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "publisher": "Cengage Learning",
+            "title": "Introductory Econometrics",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "White",
+                    "given": "Halbert"
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "white1980",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1980
+                    ]
+                ]
+            },
+            "page": "pp. 817-838",
+            "publisher": "The Econometric Society",
+            "title": "A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity",
+            "type": "article-journal",
+            "volume": "48"
+        },
+        {
+            "author": [
+                {
+                    "family": "Card",
+                    "given": "D."
+                },
+                {
+                    "family": "Krueger",
+                    "given": "Alan B."
+                }
+            ],
+            "container-title": "The American Economic Review",
+            "id": "card1994",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1994
+                    ]
+                ]
+            },
+            "page": "772-793",
+            "title": "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania",
+            "title-short": "Minimum Wages and Employment",
+            "type": "article-journal",
+            "volume": "84"
+        },
+        {
+            "author": [
+                {
+                    "family": "Card",
+                    "given": "D."
+                }
+            ],
+            "id": "card1993",
+            "issued": {
+                "date-parts": [
+                    [
+                        1993
+                    ]
+                ]
+            },
+            "publisher": "National Bureau of Economic Research",
+            "title": "Using geographic variation in college proximity to estimate the return to schooling",
+            "type": "report"
+        },
+        {
+            "author": [
+                {
+                    "family": "Granger",
+                    "given": "C. W. J."
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "granger1969",
+            "issued": {
+                "date-parts": [
+                    [
+                        1969
+                    ]
+                ]
+            },
+            "page": "424-438",
+            "publisher": "The Econometric Society",
+            "title": "Investigating Causal Relations by Econometric Models and Cross-Spectral Methods",
+            "type": "article-journal",
+            "volume": "37"
+        },
+        {
+            "ISSN": "01621459",
+            "author": [
+                {
+                    "family": "Dickey",
+                    "given": "David A."
+                },
+                {
+                    "family": "Fuller",
+                    "given": "Wayne A."
+                }
+            ],
+            "container-title": "Journal of the American Statistical Association",
+            "id": "dickey1979",
+            "issue": "366",
+            "issued": {
+                "date-parts": [
+                    [
+                        1979
+                    ]
+                ]
+            },
+            "page": "pp. 427-431",
+            "publisher": "American Statistical Association",
+            "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+            "type": "article-journal",
+            "volume": "74"
+        },
+        {
+            "author": [
+                {
+                    "family": "Chow",
+                    "given": "Gregory C."
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "chow1960",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1960
+                    ]
+                ]
+            },
+            "page": "591-605",
+            "publisher": "The Econometric Society",
+            "title": "Tests of Equality Between Sets of Coefficients in Two Linear Regressions",
+            "type": "article-journal",
+            "volume": "28"
+        },
+        {
+            "DOI": "10.1080/01621459.1960.10482067",
+            "author": [
+                {
+                    "family": "Quandt",
+                    "given": "Richard E."
+                }
+            ],
+            "container-title": "Journal of the American Statistical Association",
+            "id": "quandt1960",
+            "issue": "290",
+            "issued": {
+                "date-parts": [
+                    [
+                        1960
+                    ]
+                ]
+            },
+            "page": "324-330",
+            "publisher": "Taylor & Francis",
+            "title": "Tests of the Hypothesis That a Linear Regression System Obeys Two Separate Regimes",
+            "type": "article-journal",
+            "volume": "55"
+        },
+        {
+            "author": [
+                {
+                    "family": "Newey",
+                    "given": "Whitney K."
+                },
+                {
+                    "family": "West",
+                    "given": "Kenneth D."
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "newey1987",
+            "issued": {
+                "date-parts": [
+                    [
+                        1987
+                    ]
+                ]
+            },
+            "page": "703-08",
+            "title": "A Simple, Positive Semi-definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix",
+            "type": "article-journal",
+            "volume": "55"
+        },
+        {
+            "DOI": "10.1080/01621459.1949.10483290",
+            "author": [
+                {
+                    "family": "Cochrane",
+                    "given": "D."
+                },
+                {
+                    "family": "Orcutt",
+                    "given": "G. H"
+                }
+            ],
+            "container-title": "Journal of the American Statistical Association",
+            "id": "cochrane1949",
+            "issue": "245",
+            "issued": {
+                "date-parts": [
+                    [
+                        1949
+                    ]
+                ]
+            },
+            "page": "32-61",
+            "publisher": "Taylor & Francis",
+            "title": "Application of Least Squares Regression to Relationships Containing Auto-Correlated Error Terms",
+            "type": "article-journal",
+            "volume": "44"
+        },
+        {
+            "author": [
+                {
+                    "family": "Elliott",
+                    "given": "Graham"
+                },
+                {
+                    "family": "Rothenberg",
+                    "given": "Thomas J"
+                },
+                {
+                    "family": "Stock",
+                    "given": "James H"
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "elliott1996",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1996
+                    ]
+                ]
+            },
+            "page": "813-836",
+            "title": "Efficient Tests for an Autoregressive Unit Root",
+            "type": "article-journal",
+            "volume": "64"
+        },
+        {
+            "author": [
+                {
+                    "family": "Engle",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Granger",
+                    "given": "Clive"
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "engle1987",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1987
+                    ]
+                ]
+            },
+            "page": "251-76",
+            "title": "Co-integration and Error Correction: Representation, Estimation and Testing",
+            "type": "article-journal",
+            "volume": "55"
+        },
+        {
+            "author": [
+                {
+                    "family": "Engle",
+                    "given": "Robert"
+                }
+            ],
+            "container-title": "Econometrica",
+            "id": "engle1982",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1982
+                    ]
+                ]
+            },
+            "page": "987-1007",
+            "title": "Autoregressive conditional heteroscedasticity with estimates of the variance of united kingdom inflation",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "author": [
+                {
+                    "family": "MacKinnon",
+                    "given": "James G"
+                },
+                {
+                    "family": "White",
+                    "given": "Halbert"
+                }
+            ],
+            "container-title": "Journal of Econometrics",
+            "id": "mackinnon1985",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1985
+                    ]
+                ]
+            },
+            "page": "305-325",
+            "publisher": "Elsevier",
+            "title": "Some heteroskedasticity-consistent covariance matrix estimators with improved finite sample properties",
+            "type": "article-journal",
+            "volume": "29"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bollerslev",
+                    "given": "Tim"
+                }
+            ],
+            "container-title": "Journal of Econometrics",
+            "id": "bollerslev1986",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1986
+                    ]
+                ]
+            },
+            "page": "307-327",
+            "title": "Generalized Autoregressive Conditional Heteroskedasticity",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "URL": "https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf",
+            "author": [
+                {
+                    "family": "Venables",
+                    "given": "W. N."
+                },
+                {
+                    "family": "Smith",
+                    "given": "D. M."
+                }
+            ],
+            "id": "venables2010",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "title": "An Introduction to R",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "R-base",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A Language and Environment for Statistical Computing",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-bookdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "bookdown: Authoring Books and Technical Documents with R Markdown",
+            "type": "book",
+            "version": "0.26"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-knitr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "knitr: A General-Purpose Package for Dynamic Report Generation in R",
+            "type": "book",
+            "version": "1.39"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rmarkdown",
+            "author": [
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Luraschi",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Ushey",
+                    "given": "Kevin"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Aron"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Iannone",
+                    "given": "Richard"
+                }
+            ],
+            "id": "R-rmarkdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "rmarkdown: Dynamic Documents for R",
+            "type": "book",
+            "version": "2.14"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "bookdown2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "bookdown: Authoring Books and Technical Documents with R Markdown",
+            "type": "book",
+            "version": "ISBN 978-1138700109"
+        },
+        {
+            "URL": "https://yihui.org/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "edition": "2nd",
+            "id": "knitr2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Dynamic Documents with R and knitr",
+            "type": "book",
+            "version": "ISBN 978-1498716963"
+        },
+        {
+            "URL": "http://www.crcpress.com/product/isbn/9781466561595",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "container-title": "Implementing Reproducible Computational Research",
+            "editor": [
+                {
+                    "family": "Stodden",
+                    "given": "Victoria"
+                },
+                {
+                    "family": "Leisch",
+                    "given": "Friedrich"
+                },
+                {
+                    "family": "Peng",
+                    "given": "Roger D."
+                }
+            ],
+            "id": "knitr2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "title": "knitr: A Comprehensive Tool for Reproducible Research in R",
+            "type": "chapter",
+            "version": "ISBN 978-1466561595"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Grolemund",
+                    "given": "Garrett"
+                }
+            ],
+            "id": "rmarkdown2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R Markdown: The Definitive Guide",
+            "type": "book",
+            "version": "ISBN 9781138359338"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown-cookbook",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Riederer",
+                    "given": "Emily"
+                }
+            ],
+            "id": "rmarkdown2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "R Markdown Cookbook",
+            "type": "book",
+            "version": "ISBN 9780367563837"
+        }
+    ],
+    "project_biblios": [
+        "references/book.bib",
+        "references/packages.bib"
+    ]
+}

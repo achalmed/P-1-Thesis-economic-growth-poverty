@@ -1,0 +1,14 @@
+h1:htaciitslrm Hypothesis Tests and Confidence Intervals in the Simple Linear Regression Model
+h2:testing-two-sided-hypotheses-concerning-the-slope-coefficient Testing Two-Sided Hypotheses Concerning the Slope Coefficient
+h2:cifrc Confidence Intervals for Regression Coefficients
+h3:simulation-study-confidence-intervals Simulation Study: Confidence Intervals
+h2:rwxiabv Regression when X is a Binary Variable
+h2:hah Heteroskedasticity and Homoskedasticity
+h3:a-real-world-example-for-heteroskedasticity A Real-World Example for Heteroskedasticity
+h3:should-we-care-about-heteroskedasticity Should We Care About Heteroskedasticity?
+h3:computation-of-heteroskedasticity-robust-standard-errors Computation of Heteroskedasticity-Robust Standard Errors
+h2:the-gauss-markov-theorem The Gauss-Markov Theorem
+h3:simulation-study-blue-estimator Simulation Study: BLUE Estimator
+h2:using-the-t-statistic-in-regression-when-the-sample-size-is-small Using the t-Statistic in Regression When the Sample Size Is Small
+h2:exercises-5 Exercises
+

@@ -1,0 +1,34 @@
+h1:ittsraf Introduction to Time Series Regression and Forecasting
+h2:using-regression-models-for-forecasting Using Regression Models for Forecasting
+h2:tsdasc Time Series Data and Serial Correlation
+h3:notation-lags-differences-logarithms-and-growth-rates Notation, Lags, Differences, Logarithms and Growth Rates
+h4:autocorrelation Autocorrelation
+h4:other-examples-of-economic-time-series Other Examples of Economic Time Series
+h2:autoregressions Autoregressions
+h4:the-first-order-autoregressive-model The First-Order Autoregressive Model
+h4:forecasts-and-forecast-errors Forecasts and Forecast Errors
+h4:forecasts-and-predicted-values Forecasts and Predicted Values
+h4:application-to-gdp-growth Application to GDP Growth
+h3:autoregressive-models-of-order-p Autoregressive Models of Order 
+h2:cybtmpi Can You Beat the Market? (Part I)
+h2:apatadlm Additional Predictors and The ADL Model
+h4:forecasting-gdp-growth-using-the-term-spread Forecasting GDP Growth Using the Term Spread
+h4:stationarity Stationarity
+h4:time-series-regression-with-multiple-predictors Time Series Regression with Multiple Predictors
+h4:statistical-inference-and-the-granger-causality-test Statistical inference and the Granger causality test
+h3:forecast-uncertainty-and-forecast-intervals Forecast Uncertainty and Forecast Intervals
+h2:llsuic Lag Length Selection Using Information Criteria
+h2:nit Nonstationarity I: Trends
+h4:the-random-walk-model-of-a-trend The Random Walk Model of a Trend
+h4:problems-caused-by-stochastic-trends Problems Caused by Stochastic Trends
+h4:testing-for-a-unit-ar-root Testing for a Unit AR Root
+h4:critical-values-for-the-adf-statistic Critical Values for the ADF Statistic
+tab:DFcrits Large Sample Critical Values of ADF Test
+h4:does-u.s.-gdp-have-a-unit-root Does U.S. GDP Have a Unit Root?
+h2:niib Nonstationarity II: Breaks
+h4:has-the-predictive-power-of-the-term-spread-been-stable Has the Predictive Power of the term spread been stable?
+h4:pseudo-out-of-sample-forecasting Pseudo Out-of-Sample Forecasting
+h4:did-the-predictive-power-of-the-term-spread-change-during-the-2000s Did the Predictive Power of the Term Spread Change During the 2000s?
+h2:can-you-beat-the-market-part-ii Can You Beat the Market? (Part II)
+h4:summary Summary
+

@@ -1,0 +1,18 @@
+h1:lrwor Linear Regression with One Regressor
+h2:simple-linear-regression Simple Linear Regression
+h2:estimating-the-coefficients-of-the-linear-regression-model Estimating the Coefficients of the Linear Regression Model
+h3:the-ordinary-least-squares-estimator The Ordinary Least Squares Estimator
+h2:measures-of-fit Measures of Fit
+h3:the-coefficient-of-determination The Coefficient of Determination
+h3:the-standard-error-of-the-regression The Standard Error of the Regression
+h3:application-to-the-test-score-data Application to the Test Score Data
+h2:tlsa The Least Squares Assumptions
+h3:assumption-1-the-error-term-has-conditional-mean-of-zero Assumption 1: The Error Term has Conditional Mean of Zero
+h3:assumption-2-independently-and-identically-distributed-data Assumption 2: Independently and Identically Distributed Data
+h3:assumption-3-large-outliers-are-unlikely Assumption 3: Large Outliers are Unlikely
+h2:tsdotoe The Sampling Distribution of the OLS Estimator
+h3:simulation-study-1 Simulation Study 1
+h3:simulation-study-2 Simulation Study 2
+h3:simulation-study-3 Simulation Study 3
+h2:exercises-4 Exercises
+

@@ -1,0 +1,61 @@
+h1:resumen RESUMEN
+h1:abstract ABSTRACT
+h1:prólogo PRÓLOGO
+h1:i.-planteamiento-del-problema I. PLANTEAMIENTO DEL PROBLEMA
+h2:enunciado-del-problema 1.1. Enunciado del problema
+h2:formulación-del-problema 1.2. Formulación del problema
+h3:problema-general 1.2.1. Problema general
+h3:problemas-específicos 1.2.2. Problemas específicos
+h1:ii.-objetivos II. OBJETIVOS
+h2:objetivo-general 2.1. Objetivo general
+h2:objetivos-específicos 2.2. Objetivos específicos
+h1:iii.justificación III.JUSTIFICACIÓN
+h2:justificación-teórica 3.1. Justificación teórica
+h2:justificación-practica 3.2. Justificación practica
+h2:justificación-metodológica 3.3. Justificación metodológica
+h1:iv.-marco-teórico IV. MARCO TEÓRICO
+h2:marco-histórico 4.1. Marco histórico
+h3:enfoque-subjetivo 4.1.1. Enfoque Subjetivo
+h3:enfoque-relativo 4.1.2. Enfoque Relativo
+h3:enfoque-absoluto 4.1.3. Enfoque absoluto
+h2:marco-referencial 4.2. Marco referencial
+h2:sistema-teórico 4.3. Sistema teórico
+h3:desigualdad-socio-económica-y-la-pobreza 4.3.1. Desigualdad Socio económica y la Pobreza
+h3:empleo-e-índice-de-desarrollo-humano-idh 4.3.2. Empleo e Índice de Desarrollo Humano (IDH)
+h3:índice-de-theilen-y-grado-de-pobreza 4.3.3. Índice de Theilen y grado de pobreza
+h3:desempleo-e-índice-de-gini 4.3.4. Desempleo e Índice de Gini
+h2:marco-conceptual 4.4. Marco conceptual
+h3:desigualdad-socioeconómica 4.4.1. Desigualdad socioeconómica
+h3:la-pobreza 4.4.2. La Pobreza
+h3:empleo 4.4.3. Empleo
+h3:índice-de-desarrollo-humano-idh 4.4.4. Índice de Desarrollo Humano (IDH)
+h3:índice-de-theilen 4.4.5. Índice de Theilen
+h3:grado-de-pobreza 4.4.6. Grado de pobreza
+h3:desempleo 4.4.7. Desempleo
+h3:índice-de-gini 4.4.8. Índice de Gini
+h1:v.-hipótesis V. HIPÓTESIS
+h2:hipótesis-general 5.1. Hipótesis general
+h2:hipótesis-especifica 5.2. Hipótesis especifica
+h1:vi.variables-e-indicadores VI.VARIABLES E INDICADORES
+h2:desigualdad-socio-económica-y-dimensiones 6.1. Desigualdad socio-económica y dimensiones
+h3:variable-causa 6.1.1. Variable causa
+h3:variable-efecto 6.1.2. Variable efecto
+h2:operacionales-de-variables-y-dimensiones 6.2. Operacionales de variables y dimensiones
+h1:vii.metodología VII.METODOLOGÍA
+h2:tipo-y-nivel-de-investigación 7.1. Tipo y nivel de investigación
+h3:tipo-de-investigación 7.1.1. Tipo de investigación
+h3:nivel-de-investigación 7.1.2. Nivel de investigación
+h2:población-y-muestra 7.2. Población y muestra
+h3:población 7.2.1. Población
+h3:muestra 7.2.2. Muestra
+h2:fuentes-de-información 7.3. Fuentes de información
+h2:diseño-de-investigación 7.4. Diseño de investigación
+h2:técnicas-e-instrumentos 7.5. Técnicas e instrumentos
+h3:técnicas 7.5.1. Técnicas
+h3:instrumentos 7.5.2. Instrumentos
+h1:viii.-referencias-bibliográficas VIII. REFERENCIAS BIBLIOGRÁFICAS
+h1:conclusiones CONCLUSIONES
+h1:recomendaciones RECOMENDACIONES
+h2:r-markdown R Markdown
+h2:including-plots Including Plots
+
