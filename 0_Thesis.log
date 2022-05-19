@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  2 MAY 2022 23:17
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  2 MAY 2022 07:18
->>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.11)  18 MAY 2022 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,21 +939,6 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
-<<<<<<< HEAD
- (./Preample/0_2_Permisos.aux)
-(./Preample/0_3_Dedicatoria.aux) (./Preample/0_4_Agradecimientos.aux)
-(./Preample/0_5_Resumen.aux) (./Preample/0_6_Abstract.aux)
-(./Preample/0_7_Prologo.aux)
-(./Chapters/Ch_1_Planteamiento_problema/Ch_1_Planteamiento_problema.aux)
-(./Chapters/Ch_2_Objetivos/Ch_2_Objetivos.aux)
-(./Chapters/Ch_3_Justificacion/Ch_3_Justificacion.aux)
-(./Chapters/Ch_4_Marco_teorico/Ch_4_Marco_teorico.aux)
-(./Chapters/Ch_5_Hipotesis/Ch_5_Hipotesis.aux)
-(./Chapters/Ch_6_Variables_indicadores/Ch_6_Variables_indicadores.aux)
-(./Chapters/Ch_7_Metodologia/Ch_7_Metodologia.aux) (./References/references.aux
-) (./Chapters/Ch_8_Conclusiones/Ch_8_Conclusiones.aux)
-(./Chapters/Ch_9_Recomendaciones/Ch_9_Recomendaciones.aux))
-=======
  (./preamble/permiso.aux)
 (./preamble/dedicatoria.aux) (./preamble/agradecimiento.aux)
 (./preamble/resumen.aux) (./preamble/abstract.aux) (./preamble/prologo.aux)
@@ -967,7 +948,6 @@ LaTeX Info: Redefining \% on input line 26.
 (./chapters/chapter7/chapter7.aux) (./references/references.aux)
 (./chapters/conclusiones/conclusiones.aux)
 (./chapters/recomendaciones/recomendaciones.aux))
->>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
 \openout1 = `0_Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1087,60 +1067,6 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 \big@size=\dimen295
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 31.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 31.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 31.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 31.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-1.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-1.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-31.
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
  [1
 
 
@@ -1184,6 +1110,60 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
+.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
+.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+7.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
  [1
 
 
@@ -1244,7 +1224,7 @@ LaTeX Info: Redefining \% on input line 2.
 Package natbib Warning: Citation `Ravallion1991' on page 1 undefined on input l
 ine 11.
 
-<images/chapter1/Imagen1.jpg, id=287, 426.831pt x 227.541pt>
+<images/chapter1/Imagen1.jpg, id=286, 426.831pt x 227.541pt>
 File: images/chapter1/Imagen1.jpg Graphic file (type jpg)
 <use images/chapter1/Imagen1.jpg>
 Package pdftex.def Info: images/chapter1/Imagen1.jpg  used on input line 20.
@@ -1258,7 +1238,7 @@ l.29
 
 
 ]
-<images/chapter1/Imagen2.jpg, id=292, 426.831pt x 227.541pt>
+<images/chapter1/Imagen2.jpg, id=291, 426.831pt x 227.541pt>
 File: images/chapter1/Imagen2.jpg Graphic file (type jpg)
 <use images/chapter1/Imagen2.jpg>
 Package pdftex.def Info: images/chapter1/Imagen2.jpg  used on input line 40.
@@ -1269,7 +1249,7 @@ been already used, duplicate ignored
                    \relax 
 l.49 
       [2 <./images/chapter1/Imagen1.jpg>]
-<images/chapter1/Imagen3.jpg, id=296, 426.831pt x 227.541pt>
+<images/chapter1/Imagen3.jpg, id=295, 426.831pt x 227.541pt>
 File: images/chapter1/Imagen3.jpg Graphic file (type jpg)
 <use images/chapter1/Imagen3.jpg>
 Package pdftex.def Info: images/chapter1/Imagen3.jpg  used on input line 54.
@@ -1335,14 +1315,7 @@ Overfull \hbox (2114.68669pt too wide) in paragraph at lines 32--39
 
 
 ]) [19]
-<<<<<<< HEAD
-\openout2 = `References/References.aux'.
-
-
-(./References/references.tex (./0_Thesis.bbl)) [20
-=======
 \openout2 = `references/references.aux'.
->>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
 
 
 (./references/references.tex
@@ -1392,30 +1365,22 @@ Package rerunfilecheck Info: File `0_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 3515433A4F06D1A5A0F2068D11425185;2101.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 23963 strings out of 481239
- 448259 string characters out of 5920377
- 957826 words of memory out of 5000000
- 38440 multiletter control sequences out of 15000+600000
- 593321 words of font info for 84 fonts, out of 8000000 for 9000
-=======
- 25901 strings out of 481239
- 492621 string characters out of 5920377
- 1004809 words of memory out of 5000000
- 40354 multiletter control sequences out of 15000+600000
+ 25869 strings out of 481239
+ 491802 string characters out of 5920377
+ 1004314 words of memory out of 5000000
+ 40322 multiletter control sequences out of 15000+600000
  591677 words of font info for 83 fonts, out of 8000000 for 9000
->>>>>>> b920ddb702c55942a569a3e2394475db40b71c85
  1141 hyphenation exceptions out of 8191
- 68i,13n,77p,828b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,77p,828b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on 0_Thesis.pdf (33 pages, 483146 bytes).
+Output written on 0_Thesis.pdf (33 pages, 482213 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
+ 448 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
  124 named destinations out of 1000 (max. 500000)
  284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
